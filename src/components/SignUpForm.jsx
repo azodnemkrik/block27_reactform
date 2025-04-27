@@ -6,15 +6,13 @@ const SignUpForm = () => {
     const [password, setPassword] = useState("")
     const [error, setError] = useState(null)
 
-    const handleSubmit = async (event)=>{
-        event.preventDefault()
-        try {
-            const data = await axios.get("https://fsa-jwt-practice.herokuapp.com/signup")
-        } catch (error) {
-            setError(error)
-        }
+    const handleSubmit = (formData) => {
+        const username = formData.get("username")
+        const password = formData.get("password")
+        console.log(username, password)
+        // setUsername(formData.get("username"))
+        // setPassword(formData.get("password"))
     }
-    console.log("SignUpForm fired!")
 
     return (
     <div>
