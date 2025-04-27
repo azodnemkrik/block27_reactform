@@ -14,18 +14,18 @@ const SignUpForm = () => {
             setError(error)
         }
     }
-    console.log("A short message")
+    console.log("SignUpForm fired!")
 
     return (
     <div>
         <h2>Sign Up!</h2>
         {error && <p>{error}</p>}
-        <form onSubmit={handleSubmit}>
+        <form action={handleSubmit}>
             <label>Username:
-                <input type="text" value={username} onChange={(event)=> setUsername(event.target.value)}/>
+                <input type="text" name="username" />
             </label>
             <label>Password:
-                <input type="password" value={password} onChange={(event)=>setPassword(event.target.value)}/>
+                <input type="password" name="password"/>
             </label>
             <button>Submit</button>
         </form>
