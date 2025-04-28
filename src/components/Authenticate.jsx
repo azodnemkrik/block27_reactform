@@ -1,5 +1,9 @@
 const Authenticate = () => {
-    return <h2>Authenticate!</h2>
+    return (
+        <div>
+            <h2>Authenticate!</h2>
+        </div>
+    )
 }
 
 export default Authenticate
