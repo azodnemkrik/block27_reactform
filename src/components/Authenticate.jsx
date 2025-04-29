@@ -27,7 +27,7 @@ const Authenticate = ({token , setToken}) => {
     return (
         <div>
             <h2>Authentication</h2>
-            { error ? <p>Error detected: {error}</p> : successMessage ? <p>{successMessage}</p> : null}
+            { error ? <p>Error detected: {error}</p> : successMessage ? <p>{successMessage}</p> : <p>Ready to authenticate.</p>}
             <button onClick={()=>{handleClick()}}>Authenticate Token</button>
         </div>  
     )

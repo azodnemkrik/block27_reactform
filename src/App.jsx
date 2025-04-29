@@ -1,6 +1,5 @@
 import SignUpForm from "./components/SignUpForm";
 import Authenticate from "./components/Authenticate";
-import Error from "./components/Error";
 import { useState } from "react";
 
 function App() {
