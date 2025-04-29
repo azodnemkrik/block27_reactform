@@ -5,13 +5,13 @@ import { useState } from "react";
 
 function App() {
 	const [user , setUser] = useState({})
-	const [error, setError] = useState("")
+	const [error, setError] = useState(null)
+	const [token, setToken] = useState(null)
 
 	return (
 		<div>
-			<SignUpForm />
-			<Authenticate />
-			<Error />
+			<SignUpForm token={token} setToken={setToken}/>
+			<Authenticate token={token} setToken={setToken} error={error} setError={setError}/>
 		</div>
 	);
 }
