@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div>
 			<SignUpForm token={token} setToken={setToken}/>
-			<Authenticate token={token} setToken={setToken} error={error} setError={setError}/>
+			<Authenticate token={token} setToken={setToken} error={error} setError={setError} user={user} setUser={setUser}/>
 		</div>
 	);
 }

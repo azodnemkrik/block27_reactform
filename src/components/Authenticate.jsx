@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-const Authenticate = ({token , setToken}) => {
+
+const Authenticate = ({token , setToken, user, setUser}) => {
 
     const [successMessage, setSuccessMessage] = useState(null)
     const [error, setError] = useState(null)
