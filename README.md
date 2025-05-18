@@ -1,4 +1,6 @@
-# React + Vite
+<img width="527" alt="reactform-thumbnail" src="https://github.com/user-attachments/assets/a5a23aff-9c20-4ea9-a977-f9216b2f9524" />
+# React + Vite![Uploading reactform-thumbnail.png…]()
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
